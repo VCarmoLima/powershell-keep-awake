@@ -9,10 +9,19 @@ O script utiliza o `WScript.Shell` para simular o pressionamento da tecla **F15*
 
 ## Como usar
 
-1. Baixe o arquivo `keep-awake.ps1`.
-2. Clique com o botão direito e selecione **"Executar com o PowerShell"**.
-3. Uma janela azul abrirá informando que o script está rodando.
-4. Para parar, basta fechar a janela ou pressionar `CTRL + C`.
+### Opção 1: Modo Visível (Para testes)
+1. Clique com o botão direito em `keep-awake.ps1`.
+2. Selecione **"Executar com o PowerShell"**.
+3. Uma janela ficará aberta. Para fechar, apenas feche a janela.
+
+### Opção 2: Modo Silencioso (Recomendado para o dia a dia)
+Este modo roda o script em segundo plano, sem janelas atrapalhando.
+
+1. **Para LIGAR:** Dê um clique duplo no arquivo `run-silent.vbs`.
+   * *Nada aparecerá na tela, mas o script estará rodando.*
+   
+2. **Para DESLIGAR:** Clique com o botão direito no arquivo `stop.ps1` e escolha **"Executar com o PowerShell"**.
+   * *Ele buscará e encerrará apenas este script, sem afetar outros trabalhos.*
 
 ## Requisitos
 * Windows 10 ou 11
